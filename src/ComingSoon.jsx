@@ -1,6 +1,6 @@
 import styles from "./Coming.module.css";
 import logo from "./assets/chai.jpeg";
-
+import { Link } from "react-router-dom";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -38,15 +38,15 @@ export default function ComingSoon() {
         </div>
 
         <div className={styles.socials}>
-          <a href="#" className={styles.social} aria-label="Instagram">
+          <Link to="#" className={styles.social} aria-label="Instagram">
             <FaInstagram />
-          </a>
-          <a href="#" className={styles.social} aria-label="Facebook">
+          </Link>
+          <Link to="#" className={styles.social} aria-label="Facebook">
             <FaFacebookF />
-          </a>
-          <a href="#" className={styles.social} aria-label="X (Twitter)">
+          </Link>
+          <Link to="#" className={styles.social} aria-label="X (Twitter)">
             <FaXTwitter />
-          </a>
+          </Link>
         </div>
 
         <footer className={styles.footer}>
